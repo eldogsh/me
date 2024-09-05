@@ -1,0 +1,55 @@
+.cursoes{
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    margin-left: 15px;
+}
+.cursoes .box{
+    overflow: hidden;
+}
+.cursoes .cover{
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+.cursoes .inst{
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: -10px;
+    margin: 20px;
+    border: 1px solid white;
+
+}
+@media (max-width:767px){
+    .cursoes .inst{
+        left: 67px;
+    }
+}
+.cursoes .info{
+    padding: 10px;
+    font-size: 18px;
+    position: relative;
+    border-top: 1px solid violet;
+    
+}
+.cursoes .info .tit{
+    position: absolute;
+    left: 48%;
+    background-color: #b0c3bdde;
+    padding: 5px;
+    top: -17px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transform: translate(-50%);
+}
+.cursoes .box .text h2{
+    color: cadetblue;
+
+}
+.cursoes .box .text p{
+    line-height: 1.5;
+    color: darkolivegreen;
+
+}

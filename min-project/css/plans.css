@@ -1,0 +1,112 @@
+            /*start head*/
+
+        .plans{
+            grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
+        }
+        .plans .plana{
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .plans .plana a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 26px;
+            margin: 10px;
+            width: fit-content;
+            font-size: 20px;
+            border-radius: 11px;
+            color: #f3efe8;   
+            background-color: #b78059bd;
+        }   
+
+            .plans .box{
+                text-align: center;
+                color: white;
+                border: 3px solid #eee;
+                outline: 2px solid #bebacf;
+                transition: 0.5s;
+                cursor: pointer;
+                padding: 15px;
+            }  
+          
+             #box1{
+                background-color: #756042a8;
+            }
+            #box1:hover{
+                background-color: #a57026a8;
+                transition: 0.2s;
+
+            } 
+            #box2{
+                background-color: #bebacf;
+            }
+            #box2:hover{
+                background-color: #868199;
+                transition: 0.3s;
+
+            } 
+            #box3{
+                background-color: #03a326;
+            }
+            #box3:hover{
+                background-color: #2ebe4d;
+                transition: 0.2s;
+
+            } 
+            #box4{
+                background-color: #c56900;
+            }
+            #box4:hover{
+                background-color: #a57026a8;
+                transition: 0.2s;
+
+            }   
+          
+            
+
+            .plans .box div{
+                font-size: 40px;
+                font-size: xx-large;
+                text-transform: capitalize;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            .plans .box div span{
+                position: absolute;
+                transform: translate(-17px, -25px);
+            }
+
+         .plans .box h2{
+            font-size: 30px;
+            margin: 0;
+            font-weight: bold;
+
+            }
+            /*start box*/
+            ul{
+                padding: 0;
+            }
+            
+            .plana ul li{
+                font-size: 15px;
+                padding: 10px 2px;
+            }
+            .plana ul li:not(:last-child){
+                
+                border-bottom: 1px solid #c2b3b3;
+            }
+
+            .ul .text i{
+                margin-right: 10px;
+                color: #569f0d;
+                font-size: 25px;
+            }
+            .ul .text .x{
+                color: red;
+            }
+        
+            .inf{
+                font-size: 22px;
+                cursor: pointer;
+            }
