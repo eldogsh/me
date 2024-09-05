@@ -1,0 +1,75 @@
+.maps{
+    margin: auto;
+    text-align: center;
+}
+.maps img{
+    margin-top: 50px;
+        width: 1194px;
+    height: 630px;
+    border-radius: 30px 0px 0px 0px;
+    opacity: 0px;
+
+}
+h1{
+    font-family: Almarai;
+font-size: 24px;
+font-weight: 700;
+margin: 50px;
+line-height: 40.8px;
+}
+.talkha{
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    width: 90%;
+    margin-top: 50px;
+
+}
+.talkha .text{
+    margin-top: 20px;
+}
+.talkha .pp{
+    color: red;
+}
+
+
+.talkha .text span{
+    font-family: Almarai;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    
+    
+
+}
+.talkha .text i{
+    width: 24px;
+    height: 24px;
+
+}
+
+.talkha .text p{
+    font-family: Almarai;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: right;
+
+}
+
+.talkha img{
+        width: 489px;
+        height: 556px;
+        border-radius: 30px 20px 10px 10px;
+        opacity: 0px;
+        float: left;
+        max-width: 100%;
+
+}
+.phone i{
+    color: green;
+    margin-left: 10px;
+
+
+
+}
