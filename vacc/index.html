@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+      <style>
+        *{
+          color: white;
+      
+          margin: 0;
+        }
+        body{
+          display: flex;
+          
+        }
+        img{
+          width: 150px;
+          height: 100px;
+          margin-top: 20px;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 5px solid darkgray;
+
+        }
+        ul{
+          list-style: none  ;
+          position: relative;
+          height: 95%;
+        }
+        ul li a{
+          text-decoration: none;
+          display: flex;
+          gap:60px;
+          line-height: 40px;
+          border-radius: 20px;
+          transition: 0.5s;
+          
+
+          
+
+        }
+        ul li a:hover{
+          background-color: cadetblue;
+          transition: 0.5s;
+        }
+        
+        .pro{
+          margin-bottom: 25px;
+
+        }
+         .menue{
+          width: 30px;
+          background-color: brown;
+          height: 100vh;
+          overflow: hidden;
+          flex-shrink: 0;
+
+
+          transition: 0.5s;
+
+         }
+         .menue:hover{
+          width: 260px;
+          transition: 0.5s;
+         }
+
+
+
+         h2{
+          margin-top: 100px;
+          color: crimson;
+          text-transform: capitalize;
+         }
+         .wha{
+          position: absolute;
+          bottom: 0;
+          width: 85%;
+         }
+         .wha a{
+          background-color: green;
+          margin-right: 20px;
+          padding-left: -30px;
+
+         }
+         .mag{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+         }
+         .main{
+          background-color: rgb(0, 68, 255);
+          margin-left: 20px;
+          width: 100%;
+          padding-left:20px ;
+          padding-right: 30px;
+         }
+         .tet{
+          display: flex;
+          text-align: center;
+          justify-content: space-between;
+          border-radius: 20px;
+          padding: 15px;
+          background-color: cornflowerblue;
+          margin-left: 10px;
+          margin-top: 10px;
+          margin-right: 15px;
+         }
+         .tet:hover{
+          background-color: darkviolet;
+          cursor: pointer;
+          transition: 0.75s;
+         }
+         .box{
+          background-color: brown;
+          flex-basis: 120px;
+          height: 100px;
+          margin: 20px;
+          padding-top: 20px;
+          flex-grow: 1;
+          border-radius: 20px ;
+          display: flex;
+          justify-content: space-around;
+         }
+         .box:hover{
+          cursor: pointer;
+          background-color: indigo;
+          transition: 0.5s;
+         }
+         .folt{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+         }
+         .box i{
+          font-size: 30px;
+         }
+         .moon{
+          font-size: center;
+         }
+        table{
+          text-align: center;
+          width: 100%;
+          border-spacing: 10px;
+          flex-basis: 150px;
+          flex-wrap: wrap;
+        }
+        th,td{
+          background-color: rgb(50, 70, 59);
+          height: 40px;
+          border-radius: 12px;
+        }
+        th{
+          background-color: rgb(55, 80, 5);
+        }
+        td:hover{
+          background-color: blueviolet;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+        th:hover{
+          background-color: darksalmon;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+
+
+
+
+
+
+
+
+      </style>
+     
+  </head>
+  <body>
+
+   
+    <div class="menue">
+      <ul>
+        
+        <li class="pro">  <div class="mag">
+        <img src="post-16143436296038edcd8a59e.jpg" alt="">
+      </div> 
+        <h2>mohamed eldogsh</h2>
+    </li>
+    <li>
+          <a href="#">
+            <i class="bi bi-tencent-qq"></i>
+            <p>home</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bi bi-suit-heart-fill"></i>
+            <p>huart</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bi bi-threads-fill"></i>
+            <p>tellme</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bi-train-freight-front"></i>
+            <p>train</p>
+          </a>
+        </li>
+
+        <li  class="wha">
+          <a href="#" id="ahme">
+            <i class="bi bi-whatsapp"></i>
+            <p>call whatsapp</p>
+          </a>
+        </li>
+
+</ul>
+
+
+
+    </div>
+
+
+     <div class="main">
+      <div class="tet">
+        <p>doucamnt </p>
+        <i class="bi bi-ui-checks-grid">
+        </i>
+      </div>
+
+      <div class="folt">
+        <div class="box">
+          <i class="bi bi-shop"></i>
+          <div class="monn">
+            <p>users</p>
+            <span>200</span>
+          </div>
+
+        </div>
+        <div class="box">
+          <i class="bi bi-safe2-fill"></i>
+          <div class="monn">
+            <p>shop</p>
+            <span>187</span>
+          </div>
+
+        </div>
+        <div class="box">
+          <i class="bi bi-table"></i>
+          <div class="monn">
+            <p>products</p>
+            <span>420</span>
+          </div>
+
+        </div>
+        <div class="box">
+          <i class="bi bi-trophy"></i>
+          <div class="monn">
+            <p>win
+              (eldogsh)
+            </p>
+
+            <span>4641$</span>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="tet">
+        <p>DATA </p>
+        <i class="bi bi-shop-window">
+        </i>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th> Vaccination name</th>
+            <th> Type of vaccination </th>
+            <th> child age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>elhaspa</td>
+            <td><span class="typ"> for all</span> </td>
+            <td>20:50</td>
+          </tr>
+
+          <tr>
+            <td>elhaspa</td>
+            <td><span class="typ"> for all</span> </td>
+            <td>20:50</td>
+          </tr>
+
+          <tr>
+            <td>elhaspa</td>
+            <td><span class="typ"> for all</span> </td>
+            <td>20:50</td>
+          </tr>
+
+          <tr>
+            <td>elhaspa</td>
+            <td><span class="typ"> for all</span> </td>
+            <td>20:50</td>
+          </tr>
+
+          <tr>
+            <td>elhaspa</td>
+            <td><span class="typ"> for all</span> </td>
+            <td>20:50</td>
+          </tr>
+
+        </tbody>
+        <tfoot>
+
+
+        </tfoot>
+
+
+
+
+
+
+      </table>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+    <script>
+
+      document.getElementById("ahme").onclick = function (){
+        alert("01149701019 mohamed eldogsh");
+      }
+      setTimeout(function(){
+        alert("how are you");}
+        ,1000)
+
+
+        function ds(ma,oa){
+          mass=`hallo`;
+
+          function dsa(){
+            mass= `${mas} ${ma} ${oa}`;
+          }
+          dsa();
+          return mass;
+
+        }
+        console.log(ds("mohamed","eldogsh"))
+
+      
+      
+      
+
+
+
+
+
+
+
+    </script>
+
+
+    
+
+  </body>
+</html>
