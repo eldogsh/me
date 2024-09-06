@@ -1,0 +1,566 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    padding: 8px;
+    
+}
+html{
+    scroll-behavior:smooth;
+}
+
+
+.container{
+    margin-left:auto;
+    margin-right:auto;
+}
+@keyframes ft {
+   
+    40%{
+        transform: rotate(180deg);
+        opacity: 0.5;
+    }
+    50%{
+        color: red;
+        transform: translate(50px);
+
+    }
+    100%{
+        color: green;
+
+    }
+
+    
+}
+
+/*midia screen*/
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+    
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){   
+    .container{
+        width: 1170px;
+    }
+}
+   
+ @media(max-width:767px){
+        .main{
+            font-size: 60px;
+        }
+    }
+
+
+/*the first header*/
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.header .logo{
+    position: sticky;
+    width: 150px;
+}
+.header .links:hover .icon span:last-child{
+    width: 100%;
+    transition: 0.3s;
+}
+.header .links{
+    position: relative;
+}
+@media (max-width:700px){
+    .header .links{
+        margin-right: 140px;
+    }
+}
+.header .links .icon{
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .links .icon span{
+background-color: black;
+margin-bottom: 4px;
+background-color: rgb(18, 66, 50);
+}
+.header .links .icon span:first-child{
+    width: 100%;
+    height: 3px;
+}
+.header .links .icon span:nth-child(2){
+    height:3px;
+    width: 100%;
+}
+.header .links .icon span:last-child{
+    width: 80%;
+    transition: 0.5s;
+    height:3px;
+   
+}
+.header .links ul{
+    margin: 0;
+    padding: 10px;
+    background-color: #fef;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 20px);
+    min-width: 180px;
+    list-style-type: none;
+    display: none;
+    z-index: 1;
+    }
+.header .links:hover ul{
+    display: block;
+    cursor: pointer;
+}
+.header .links ul::before{
+    position: absolute;
+    content: "";
+    height: 7px;
+    right: 0;
+    top: -30px;
+    border: 13px solid;
+    border-color: transparent transparent rgb(172, 152, 172) transparent;
+}
+.header .links ul li a{
+    transition: 0.5s;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    color: rgb(14, 6, 56);
+}
+.header .links ul li:not(:last-child){
+    border-bottom: 1px solid rgb(20, 22, 22);
+}
+.header .links ul li a:hover{
+    color:rgb(37, 75, 63);
+    padding-left: 25px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+/*the end header*/
+
+
+/*the start land scape*/
+.landscape{
+    background-image: url(./image/snow-capped-mountain-peak-surrounded-by-clouds-on-royalty-free-image-1623254319.jpg);
+    background-size: cover;
+    height:calc(100vh - 52px);
+    position: relative;   
+    filter: brightness(0.7);
+    opacity: 0.8;
+
+
+}
+.landscape .intro{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    max-width: 100%;
+    width: 320px;
+}
+.landscape .intro h1{
+    margin: 0;
+    color:#e4760f;
+}
+.landscape .intro p{
+    font-size: 20px;
+
+}
+/*the end land scape*/
+
+/*the start featur*/
+
+.featuer{
+  background-color: rgb(224, 220, 224);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid rebeccapurple;
+ 
+}
+.featuer .container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.featuer .container .feat{
+    text-align: center;
+
+}
+
+.featuer .container .feat i{
+    color: rgb(29, 16, 145);
+    padding-top: 6px;
+    animation-name: ft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: perspective();
+    animation-direction: alternate; 
+}
+
+
+.featuer .container .feat h3{
+    font-weight: 800;
+    color: #7921af;
+    margin: 30px;
+
+}
+.featuer .container .feat p{
+    line-height:1.8;
+    font-size: larger;
+    font-style: italic;
+    max-width: 100%;
+}
+.featuer .container .feat{
+    animation-name: example;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-iteration-count: 2;
+    animation-direction: both;
+    
+
+}
+@media (max-width:700px) {
+    .featuer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*the end featur*/
+
+
+ 
+/*the start service*/
+
+.main{
+    text-align: center;
+    font-weight: 800;
+    font-size: 34px;
+    letter-spacing: -2px;
+    padding-top: 20px;
+}
+.main+p{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(64, 185, 8);
+    font-style: italic;
+  }
+.servic{
+    box-shadow:2px 4px 4px 5px rgb(194, 116, 116);
+    border-bottom: 8px solid maroon;
+    margin-top: -8px;
+    padding-bottom: 40px;
+    background-color: #5a044c;
+    color: wheat;
+    border-radius: 30px;
+}
+@media (max-width:700px) {
+    .servic{
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+.servic .serv{
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}   
+.servic .serv .col .srv{
+    margin-left: -15px;
+    margin-bottom: 40px;
+    display: flex;
+}
+.servic .serv .col .srv i{
+    color: rgb(218, 158, 29);
+    flex-basis: 50px;
+    margin: 0;
+    animation-name: ft;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    
+}
+
+.servic .serv .col .srv .text{
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+.servic .serv .col .srv .text h2{
+    margin: 0;
+
+}
+.servic .serv .col .srv .text p{
+    color: chocolate;
+    padding-top: 15px;
+    font-size: larger;
+    font-weight: 300;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+.servic .serv .col .mag{
+    position: relative;
+    text-align: center;
+}
+.servic .serv .mag::before{
+    position: absolute;
+    content: "";
+    background-color: red;
+    width: 15px;
+    right:0;
+    height: 100%;
+    z-index: 1;
+}
+@media (max-width:767px) {
+    .servic .serv .srv{
+        text-align: center;
+        flex-direction: column;
+    }
+    
+}
+
+/*the end service*/
+
+
+/*the start profle*/
+.profle{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #eee;
+    border-radius: 30px;
+    border-bottom: 8px solid darkcyan;
+
+}
+@media (max-width:700px) {
+    .profle{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.mm h2{
+    font-weight: 800;
+    color: rgb(28, 15, 207);
+    text-align: center;
+}
+.mm p{
+    font-weight: 800;
+    font-style: italic;
+    font-size: larger;
+    text-align: center;
+    color: rgb(26, 66, 51);
+}
+.pro{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:100px;
+    text-align: center;
+    margin-top: 20px;
+}
+.pro-1 h2{
+    color: rgb(7, 25, 51);
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+
+}
+.pro-1 img{
+    max-width: 100%;
+}
+.pro-1 p{
+    margin: 0;
+    color: #7921af;
+    line-height: 1.6;
+    font-weight: 600;
+    padding-top: 10px;
+}
+/*the end profle*/
+
+
+/*the start about*/
+.about{
+    background-color: rgb(122, 4, 151);
+    border-radius: 30px;
+    
+}
+.about .bout{
+    display: flex;
+
+}
+.about .bout .text p:first-of-type{
+    line-height: 1.6;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    font-size: 20px;
+    color: white;
+    max-width: 100%;
+}
+.about .bout .text p:last-of-type{
+    line-height: 1.6;
+    padding-top: 20px;
+    padding-left: 100px;
+    color: white;
+    max-width: 100%;
+    font-size: 20px;
+    padding-bottom: 80px;
+}
+
+.about .bout .ima{
+    position: relative;
+    width: 600px;
+}
+.about .bout .ima img{
+    max-width: 100%;
+}
+.about .bout .ima::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 95%;
+    top: -10px;
+    border-top: 30px solid gray;
+    background-color: #04b430;
+    z-index:1;
+    left: -50px;
+}
+
+.about .bout .ima::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 63%;
+    top: -10px;
+    z-index: 1;
+    right: -160px;
+    opacity: 0.3;
+    border-left: 60px solid red;
+    border-bottom: 50px solid gold;
+}
+hr{
+    display: inline-block;
+    width: 100%;
+}
+@media (max-width:991px){
+    .about .bout{
+        flex-direction: column;
+    }
+
+    .about .bout .ima::after,::before{
+        display: none;
+    }
+    .about .bout .ima{
+        margin: 0;
+    }
+
+}
+
+/*the end about*/
+
+/*the start social*/
+
+
+.fot{
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-image:linear-gradient(to right,rgb(48, 3, 48),rgb(71, 49, 49),rgb(126, 38, 38),rgb(11, 120, 124));
+    margin-top: 20px;
+    outline: none;
+}
+ .fot .info{
+    padding-bottom: 30px;
+    padding-top:20px;
+    text-align: center;
+
+
+}
+.fot h2{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    color: rgb(21, 139, 139);
+}
+.fot a{
+    display: block;
+    font-weight: 800;
+    font-size: 25px;
+    color: rgb(233, 6, 184);
+    text-decoration: none;
+}
+.fot .social{
+    display: flex;
+    justify-content: center;
+    color: rgb(233, 103, 17);
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+.fot .social i{
+    margin-left: 10px;
+    color: rgb(2, 185, 33);
+    animation-name: ft;
+    animation-duration: 2s;
+    animation-fill-mode: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    transform: perspective();
+
+}
+
+
+/*the end social*/
+
+/*the start foter*/
+
+.foter{
+    background-color: rgb(67 75 75);
+    height: 70px;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: 800;
+    font-size:20px;
+    color: white;
+    margin-top: 50px;
+
+    
+
+}
+.foter span{
+  color:rgb(197 166 100);
+        font-weight: bold;
+}
+@media(max-width:768px){
+    .fot h2,a{
+        font-size: 25px;
+    }
+}
+/*the end foter*/
+
+
+
+
