@@ -1,0 +1,168 @@
+
+
+
+.profile .over .info .level{
+    background-color: #14c54063;
+    margin: auto;
+    height: 8px;
+    width: 100px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.profile .over .info{
+    width: 200px;
+}
+@media (min-width:767px){
+    .profile .over .info{
+    border-right: 2px solid rgb(204, 227, 228);
+    }
+}
+@media (max-width:767px) {
+    .over{
+        flex-direction: column;
+    }
+    
+}
+
+.profile .over .info img{
+    width: 70px;
+}
+.profile .info .level span{
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+    left: 0;
+    background-color: #9b7b90f0;
+}
+
+
+/*end info*/
+
+
+@media (max-width:767px) {
+    .profile .over .box1{
+        min-width: 250px;
+        padding: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+}
+.profile .over .box .box1 > div{
+    min-width: 210px;
+    margin-bottom: 20px;
+    padding: 10px 0 0;
+}
+.profile .over .box .box1{
+    border-bottom: 1px solid rgb(171, 199, 171);
+    transition: 0.2s;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+.profile .over .box .box1:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #e9e6e6;
+}
+
+.profile .over .box .box1 .toggle-checkbox{
+    display: none;
+
+}
+.toggle-switch{
+    background-color: #ccc;
+    width: 78px;
+    height: 17px;
+    margin-left: 20px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-checkbox:checked +.toggle-switch::before{
+    left: 50px;
+    transition: 0.5s;
+    content: "\f00c";
+
+}
+.toggle-switch::before{
+    font-family:"Font Awesome 6 Free"; ;
+    content: "\a00c";
+    font-weight: 900;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #644242;
+    transition: 0.5s;
+}
+
+.profile .over .box .box1 .toggle-checkbox:checked +.toggle-switch{
+    background-color: aqua;
+
+}
+/*end box*/
+/*end over*/
+
+.person{
+    gap: 10px;
+}
+.person .skils{
+    width: 300px;
+    background-color: #c9e1e173;
+    border-radius: 20px;}
+ .person .skils ul li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+.person .skils ul li span{
+    background-color: #b79e9e5e;
+    border-radius: 8px;
+    padding: 5px;
+
+}
+    .person .skils ul li:not(:last-child){
+        border-bottom: 1px solid rgb(185, 190, 179);
+        
+    }
+
+.person .activitis{
+    width: 100%;
+    border-radius: 28px;
+    BACKGROUND-COLOR: #a19d9d3b;
+}    
+
+.person .activitis .box .info{
+    flex-grow: 1;
+    padding-left: 10px;
+}
+.person .activitis .box{
+    padding: 20px;
+}
+@media (max-width:767px){
+    .person{
+        flex-direction: column;
+    }
+    .person .activitis .box{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .person .activitis .box .info,
+    .person .activitis .box .text{
+        
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+}
