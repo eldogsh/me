@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>clac degree</title>
+  <script src="js.js"></script>
+</head>
+<body>
+
+  <style>
+    table{
+      width: 70%;
+      border: solid 1px #ccc;
+      border-collapse: collapse;
+      margin: 2% auto;
+    }
+
+    th, td{
+    border: 1px solid #eee;
+    height: 50px;
+}
+  th{
+    color: green;
+    font-size: 30px;
+  }
+  td{
+    text-align: center;
+  }
+  caption{
+    font-size: 40px;
+    color: darkcyan;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  input[type="number"]{
+    outline: 0;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border:1px solid rgb(236, 232, 232);
+
+  }
+
+  th:nth-child(3){
+    width: 60%;
+  }
+
+
+  button{
+    display: block;
+    margin: 2% auto;
+    transition: 0.5s;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 20px;
+    color:black;
+    cursor: pointer;
+    background-color: aqua;
+    border: none;
+   outline: 0;
+    border-radius: 10px;
+  }
+  button:hover{
+    background-color: rebeccapurple;
+    transition: 0.5s;
+  }
+
+
+
+
+
+
+  </style>
+
+<table>
+  <caption>calck degree</caption>
+
+  <!--info-->
+  <tr>
+    <th>degre</th>
+    <th>full</th>
+    <th>precntage</th>
+  </tr>
+
+  <!--data-->
+  <tr>
+
+
+
+    <td>
+      <input type="number" placeholder="0"  id="deg">
+    </td>
+    <td>
+      <input type="number"  placeholder="0" id="full">
+    </td>
+    <td id="resulat"></td>
+  </tr>
+</table>
+
+<button onclick="calc()"> calcaluter</button>;
+
+
+
+
+
+
+
+
+
+</body>
+</html>
