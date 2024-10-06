@@ -33,6 +33,6 @@ function age(){
     let result=document.getElementById("result");
 
     
-    result.innerHTML=`your age is ${getyear} and your motnth is ${getmonth} and your day is${day}`
+    result.innerHTML=`your age is ${getyear} and your motnth is ${getmonth} and your day is${getday}`
 
 }
